@@ -9,9 +9,14 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int turismo1, turismo2;
+    //Declaração das variáveis relevantes para a execução do código
 
-    // Comece digitando as informações solicitadas para a primeira carta
-    // Para a letra, escolha uma de "A" a "H". O código consiste nessa letra seguida por um numero de 01 a 04
+    printf ("Comece digitando as informações solicitadas para a primeira carta\n");
+    printf ("Para a letra, escolha uma de 'A' a 'H'. O código consiste nessa letra seguida por um numero de 01 a 04\n");
+    //O usuário define os valores que quiser para cada atributo
+
+    //printf - mostra o texto no terminal
+    //scanf - recebe a entrada de valor pelo usuário
 
     printf ("Digite a letra do estado: \n");
     scanf (" %c", &estado1);
@@ -34,6 +39,8 @@ int main() {
     printf ("Digite a quantidade de pontos turisticos na cidade: \n");
     scanf ("%d", &turismo1);
 
+    //Agora, todos os valores definidos anteriormente são printados
+
     printf ("Carta 1: \n");
     printf ("Estado: %c\n", estado1);
     printf ("Código: %s\n", codigo1);
@@ -44,7 +51,8 @@ int main() {
     printf ("Pontos turísticos: %d\n\n", turismo1);
 
 
-    // Agora, digite as informações para a segunda carta
+    printf ("Agora, digite as informações para a segunda carta\n");
+    //Novamente, o usuário escolhe os valores
 
     printf ("Letra do estado: \n");
     scanf (" %c", &estado2);
@@ -66,6 +74,8 @@ int main() {
 
     printf ("Quantidade de pontos turisticos na cidade: \n");
     scanf ("%d", &turismo2);
+
+    //E novamente, o terminal mostra todos os valores definidos
 
     printf ("Carta 2: \n");
     printf ("Estado: %c\n", estado2);

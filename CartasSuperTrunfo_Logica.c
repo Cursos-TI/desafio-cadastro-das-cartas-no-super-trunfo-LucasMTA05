@@ -100,6 +100,9 @@ int main() {
 
     printf ("***Comparação das cartas***\n");
 
+    //Operadores relacionais são usados para checar qual valor é superior
+    //Se a condição for verdadeira, o "if" é printado no terminal. caso contrário, teremos o "else"
+
     if (populacao1 > populacao2) {
         printf ("População - A carta 1 venceu: %u\n", populacao1);
     } else {

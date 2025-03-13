@@ -104,6 +104,7 @@ int main() {
     printf ("1 - Nome, 2 - População, 3 - Área, 4 - PIB, 5 - Pontos turísticos, 6 - Densidade demográfica\n");
     scanf ("%d", &opcao);
 
+    //Foi usado o switch para caso tenha um empate entre as cartas
     switch (opcao) {
         case 1:
         printf ("Temos os países: %s e %s\n", pais1, pais2);

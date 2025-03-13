@@ -11,9 +11,14 @@ int main() {
     int turismo1, turismo2;
     float densidade1, densidade2;
     float percapita1, percapita2;
+    //Declaração das variáveis relevantes para a execução do código
 
     printf ("Comece digitando as informações solicitadas para a primeira carta \n");
     printf ("Para a letra, escolha uma de 'A' a 'H'. O código consiste nessa letra seguida por um numero de 01 a 04 \n\n"); 
+    //O usuário define os valores que quiser para cada atributo
+
+    //printf - mostra o texto no terminal
+    //scanf - recebe a entrada de valor pelo usuário
 
     printf ("Digite a letra do estado: \n");
     scanf (" %c", &estado1);
@@ -36,10 +41,12 @@ int main() {
     printf ("Digite a quantidade de pontos turisticos na cidade: \n");
     scanf ("%d", &turismo1);
 
+    //As variáveis representando a densidade e o PIB per Capita serão calculados com base na população, área e PIB definidos pelo usuário
     densidade1 = (float) populacao1 / area1;
     percapita1 =  pib1 / (float) populacao1;
-    // float converte o inteiro populacao1 em um ponto flutuante
+    // (float) converte o inteiro populacao1 em um ponto flutuante
 
+     //Agora, todos os valores definidos anteriormente são printados
     printf ("Carta 1: \n");
     printf ("Estado: %c\n", estado1);
     printf ("Código: %s\n", codigo1);
@@ -52,6 +59,7 @@ int main() {
     printf ("PIB per Capita: %.2f\n\n", percapita1);
 
 
+    //Novamente, o usuário escolhe os valores
     printf ("Agora, digite as informações para a segunda carta \n\n");
 
     printf ("Letra do estado: \n");
@@ -77,6 +85,8 @@ int main() {
 
     densidade2 = (float) populacao2 / area2;
     percapita2 = pib2 / (float) populacao2;
+
+    //E novamente, o terminal mostra todos os valores definidos
 
     printf ("Carta 2: \n");
     printf ("Estado: %c\n", estado2);
